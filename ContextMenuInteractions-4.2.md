@@ -45,12 +45,13 @@ if (int.isUserContextMenuCommand() == true) {
  
  ---
 
-Now add something like this to your code modal receiver
+Now add something like this to your code modal receiver.
+
+**Important: make the id `kickmodal.${int.targetMember.id}`**
  
  ```js
  if (int.customId.startsWith('kickmodal.')) {
   targetid = int.customId.slice(10)
-  // replace kickmodal with your modal ID
   reason = int.fields.getTextInputValue("reason")
   member = await int.guild.members.fetch(targetid)
   if (int.member.permissions.has("KICK_MEMBERS")) {
