@@ -1,11 +1,13 @@
 Add the following to your code:
-• replies
-• pins
-• reactions
-• attachments
-• message edits
-• threads
-• tts
+<ul>
+  <li>replies</li>
+  <li>pins</li>
+  <li>reactions</li>
+  <li>attachments</li>
+  <li>message edits</li>
+  <li>threads</li>
+  <li>tts</li>
+</ul>
 
 **replies**
 Use `message.reply(/*message*/)`
